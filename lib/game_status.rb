@@ -43,10 +43,10 @@ end
 
 #draw? Method
 def draw?(board)
-  if won?(board) == false && full?(board) == true
-    true
-  else
+  if won?(board) == [] && full?(board) == true
     false
+  else
+    true
   end
 end
 
