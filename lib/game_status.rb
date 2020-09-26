@@ -27,7 +27,7 @@ def won?(board)
         return combo
       end
       if board.any? {|i| i != " "}
-        false
+        return false
     end
   end
 end
