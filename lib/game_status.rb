@@ -52,7 +52,7 @@ end
 
 #over? Method
 def over?(board)
-  if board.none? {|i| i == " "} && temp = 0
+  if won?(board) == false
     false
   else
     won?(board) != false || draw?(board)
