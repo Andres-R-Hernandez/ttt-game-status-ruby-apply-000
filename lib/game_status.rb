@@ -64,7 +64,8 @@ end
 #winner Method
 def winner(board)
   if over?(board) && won?(board)
-    player = won?(board)[0]
+    position = won?(board)[0]
+    player = board[position]
     puts "#{player}"
   else
     nil
