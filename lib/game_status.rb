@@ -49,7 +49,7 @@ end
 
 #over? Method
 def over?(board)
-  won?(board) != false || draw?(board)
+  won?(board).is_array? || draw?(board)
 end
 
 #winner? Method
