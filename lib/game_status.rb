@@ -30,7 +30,7 @@ def won?(board)
         return win
       end
     end
-    if board.none? {|i| i == " "} && win == nil
+    if board.none? {|i| i == " "} && win == 0
       return false
     end
   end
