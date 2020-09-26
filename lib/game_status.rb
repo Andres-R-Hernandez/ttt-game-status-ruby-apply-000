@@ -18,9 +18,7 @@ WIN_COMBINATIONS =[
 #won? Method
 def won?(board)
 
-  !board.all? do |position|
-  position == " "
-  end
+  board.all? {|position| position == " "}
 
   board.none? {|i| i = " "}
     false
@@ -32,7 +30,9 @@ def won?(board)
       return combo
     elsif (board[combo[0]] == " " && board[combo[1]] == " " && board[combo[2]] == " ")
       nil
-    else
+    elsif board.all? {|position| position == " "}
+      nil
+    elsif board.none? {|i| i = " "}
       nil
     end
   end
