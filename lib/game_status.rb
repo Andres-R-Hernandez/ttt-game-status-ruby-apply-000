@@ -17,6 +17,7 @@ WIN_COMBINATIONS =[
 
 #won? Method alternate
 def won?(board)
+
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
@@ -34,25 +35,16 @@ end
 
 
 #won? Method
-def won?(board)
-  win = 0
-  if board.all? {|i| i == " "}
-    false
-  else
-    WIN_COMBINATIONS.each do |combo|
-      if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X")
-        win = combo
-        return win
-      elsif (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O")
-        win = combo
-        return win
-      end
-    end
-    if board.none? {|i| i == " "} && win == 0
-      return false
-    end
-  end
-end
+#def won?(board)
+#  win = 0
+#  if board.all? {|i| i == " "}
+#    false
+#  else
+#    if board.none? {|i| i == " "} && win == 0
+#      return false
+#    end
+#  end
+#end
 
 #full? Method
 def full?(board)
