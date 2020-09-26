@@ -17,7 +17,6 @@ WIN_COMBINATIONS =[
 
 #won? Method
 def won?(board)
-
   if board.all? {|i| i == " "}
     false
   elsif board.none? {|i| i == " "}
