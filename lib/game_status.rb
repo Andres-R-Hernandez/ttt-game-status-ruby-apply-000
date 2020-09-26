@@ -19,7 +19,7 @@ WIN_COMBINATIONS =[
 def won?(board)
   win = 0
   if board.all? {|i| i == " "}
-    nil
+    false
   else
     WIN_COMBINATIONS.each do |combo|
       if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X")
@@ -31,7 +31,7 @@ def won?(board)
       end
     end
     if board.none? {|i| i == " "} && win == 0
-      return nil
+      return false
     end
   end
 end
@@ -48,14 +48,14 @@ end
 
 #over? Method
 def over?(board)
-  won?(board) != nil || draw?(board)
+  won?(board) != false || draw?(board)
 end
 
 #winner Method
 def winner(board)
-  if won?(board) != nil
+  if won?(board) != false
     puts "#{board[won?(board)[0]]}"
   else
-    nil
+    false
   end
 end
