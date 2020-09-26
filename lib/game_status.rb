@@ -69,4 +69,5 @@ def winner(board)
     puts "#{player}"
   else
     false
+  end
 end
