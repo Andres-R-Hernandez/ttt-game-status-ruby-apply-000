@@ -19,6 +19,13 @@ WIN_COMBINATIONS =[
 
 #won? Method
 def won?(board)
+
+  if board.all? do |position|
+    position == " "
+    end
+    nil
+  end
+
   WIN_COMBINATIONS.each do |combo|
     if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X")
       return combo
