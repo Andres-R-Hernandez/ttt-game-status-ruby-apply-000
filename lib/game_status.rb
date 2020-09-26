@@ -15,12 +15,19 @@ WIN_COMBINATIONS =[
   [6,4,2]
 ]
 
+
+
 #win Method
 def win(board)
   WIN_COMBINATIONS.each do |combo|
     if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X")
-      || (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O")
-    "X won in the top row"
+      return combo
+    elsif (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O")
+      return combo
+    elsif (board[combo[0]] == " " && board[combo[1]] == " " && board[combo[2]] == " ")
+      nil
+    else
+      nil
     end
   end
 end
