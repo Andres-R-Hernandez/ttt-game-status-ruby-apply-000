@@ -49,9 +49,7 @@ end
 
 #over? Method
 def over?(board)
-  won?(board) == [] || draw?(board)
-  there is a winner
-  there is a draw
+  won?(board) != false || draw?(board)
 end
 
 #winner? Method
