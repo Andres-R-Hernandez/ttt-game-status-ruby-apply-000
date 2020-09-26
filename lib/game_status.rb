@@ -67,8 +67,6 @@ def winner(board)
     position = won?(board)[0]
     player = board[position]
     puts "#{player}"
-  elsif draw?(board)
-    true
   else
     false
 end
