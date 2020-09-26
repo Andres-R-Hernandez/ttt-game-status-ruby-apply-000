@@ -64,7 +64,10 @@ end
 #winner Method
 def winner(board)
   if won?(board)
-    return "win"
+    combo = won?(board)
+    position = combo[0]
+    player = board[position]
+    puts "#{}"
   else
     return nil
   end
