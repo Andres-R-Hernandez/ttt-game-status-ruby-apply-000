@@ -35,6 +35,9 @@ def won?(board)
       false
     end
   end
+  if board.none? {|i| i == " "} && temp = 0
+    false
+  end
 end
 
 #full? Method
