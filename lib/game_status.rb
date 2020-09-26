@@ -17,8 +17,8 @@ WIN_COMBINATIONS =[
 
 
 
-#win Method
-def win(board)
+#won? Method
+def won?(board)
   WIN_COMBINATIONS.each do |combo|
     if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X")
       return combo
