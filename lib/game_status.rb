@@ -53,5 +53,9 @@ end
 
 #winner? Method
 def winner?(board)
-
+  if won?(board) != false
+    puts "#{won?(board)[0]}"
+  else
+    nil
+  end
 end
