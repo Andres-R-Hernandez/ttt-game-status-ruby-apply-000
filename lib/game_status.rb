@@ -23,11 +23,11 @@ def won?(board)
     elsif (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O")
       return combo
     elsif (board[combo[0]] == " " && board[combo[1]] == " " && board[combo[2]] == " ")
-      nil
+      false
     elsif board.all? {|position| position == " "}
-      nil
+      false
     elsif board.none? {|i| i = " "}
-      nil
+      false
     end
   end
 end
