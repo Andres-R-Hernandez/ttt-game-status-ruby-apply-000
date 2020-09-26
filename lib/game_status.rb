@@ -64,8 +64,8 @@ end
 #winner Method
 def winner(board)
   if won?(board) != false
-    puts "win"
+    return "win"
   else
-    puts "no win"
+    return "no win"
   end
 end
