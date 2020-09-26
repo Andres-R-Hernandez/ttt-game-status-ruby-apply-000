@@ -68,6 +68,6 @@ def winner(board)
     player = board[position]
     puts "#{player}"
   else
-    false
+    nil
   end
 end
