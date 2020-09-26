@@ -28,7 +28,6 @@ def won?(board)
       elsif (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O")
         win = combo
         return win
-        false
       end
     end
     if board.none? {|i| i == " "} && win == nil
