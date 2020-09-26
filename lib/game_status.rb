@@ -48,12 +48,12 @@ end
 
 #over? Method
 def over?(board)
-  won?(board) != false || draw?(board)
+  won?(board) != nil || draw?(board)
 end
 
 #winner Method
 def winner(board)
-  if won?(board) != false
+  if won?(board) != nil
     puts "#{board[won?(board)[0]]}"
   else
     nil
