@@ -19,9 +19,7 @@ WIN_COMBINATIONS =[
 def won?(board)
 
   !board.all? {|position| position == " "}
-    false
   board.none? {|i| i = " "}
-    false
 
   WIN_COMBINATIONS.each do |combo|
     if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X")
