@@ -43,7 +43,7 @@ end
 
 #draw? Method
 def draw?(board)
-  won?(board) == false && full?(board)
+  !won?(board) && full?(board)
 end
 
 #over? Method
