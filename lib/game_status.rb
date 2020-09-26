@@ -56,6 +56,6 @@ def winner(board)
   if won?(board) != false
     puts "#{board[won?(board)[0]]}"
   else
-    false
+    nil
   end
 end
