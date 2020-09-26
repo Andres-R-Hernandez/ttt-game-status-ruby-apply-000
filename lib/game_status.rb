@@ -33,6 +33,5 @@ def won?(board)
         nil
       end
     end
-  !board.all? {|i| i == " "}
-  !board.none? {|i| i == " "}
+  end
 end
