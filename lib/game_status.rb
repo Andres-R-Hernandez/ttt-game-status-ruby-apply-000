@@ -35,3 +35,8 @@ def won?(board)
     end
   end
 end
+
+#full? Method
+def full?(board)
+  !board.any? {|i| i == " "}
+end
