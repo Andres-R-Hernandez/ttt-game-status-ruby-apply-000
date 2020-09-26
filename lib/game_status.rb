@@ -49,7 +49,7 @@ end
 
 #over? Method
 def over?(board)
-  won?(board) != false || draw?(board)
+  (won?(board) != false && full?(board) == false) || draw?(board)
 end
 
 #winner? Method
