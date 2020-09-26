@@ -29,5 +29,5 @@ def won?(board)
     end
   end
   !board.all? {|i| i == " "}
-  board.none? {|i| i == " "}
+  !board.none? {|i| i == " "}
 end
