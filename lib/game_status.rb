@@ -28,6 +28,7 @@ def won?(board)
       end
       if board.any? {|i| i != " "}
         return false
+      end
     end
   end
 end
