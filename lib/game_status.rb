@@ -23,15 +23,17 @@ def won?(board)
   else
     WIN_COMBINATIONS.each do |combo|
       if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X")
-        return combo
+        win = combo
+        return = win
       elsif (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O")
-        return combo
-      else
+        win = combo
+        return = win
         nil
       end
     end
     if board.none? {|i| i == " "} && win == nil
       false
+    end
   end
 end
 
