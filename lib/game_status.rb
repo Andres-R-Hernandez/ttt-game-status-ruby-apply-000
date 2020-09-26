@@ -15,8 +15,6 @@ WIN_COMBINATIONS =[
   [6,4,2]
 ]
 
-
-
 #won? Method
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
@@ -32,5 +30,8 @@ def won?(board)
   end
   !board.all? do |position|
   position == " "
+  end
+  board.all? do |position|
+  position != " "
   end
 end
