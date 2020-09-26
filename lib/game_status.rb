@@ -28,6 +28,6 @@ def won?(board)
       nil
     end
   end
-  !board.all? {|position| position == " "}
+  !board.all? {|i| i == " "}
   board.none? {|i| i = " "}
 end
