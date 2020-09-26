@@ -21,6 +21,5 @@ def win(board)
     if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
     "X won in the top row"
     end
-
   end
 end
