@@ -65,7 +65,7 @@ end
 def winner(board)
   if won?(board)
     combo = won?(board)
-    position = combo[0]
+    position = combo[1]
     player = board[position]
     puts "#{}"
   else
