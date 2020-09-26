@@ -40,3 +40,22 @@ end
 def full?(board)
   !board.any? {|i| i == " "}
 end
+
+#draw? Method
+def draw?(board)
+  if won?(board) == false && full?(board) == true
+    true
+  else
+    false
+  end
+end
+
+#over? Method
+def over?(board)
+
+end
+
+#winner? Method
+def winner?(board)
+
+end
