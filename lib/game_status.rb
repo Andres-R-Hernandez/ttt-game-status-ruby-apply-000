@@ -31,7 +31,7 @@ def won?(board)
   !board.all? do |position|
   position == " "
   end
-  board.all? do |position|
-  position != " "
+  board.any? do |position|
+  position == " "
   end
 end
