@@ -23,7 +23,7 @@ def won?(board)
   if board.all? do |position|
     position == " "
     end
-    nil
+    false
   end
 
   WIN_COMBINATIONS.each do |combo|
