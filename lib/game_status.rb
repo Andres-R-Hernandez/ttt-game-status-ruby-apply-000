@@ -26,9 +26,6 @@ def won?(board)
       elsif (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O")
         return combo
       end
-      if board.any? {|i| i != " "}
-        return false
-      end
     end
   end
 end
