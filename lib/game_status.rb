@@ -53,6 +53,9 @@ end
 #over? Method
 def over?(board)
   won?(board) != false || draw?(board)
+  if board.none? {|i| i == " "} && temp = 0
+    false
+  end
 end
 
 #winner Method
