@@ -29,6 +29,8 @@ def won?(board)
         return combo
       elsif (board[combo[0]] == " " && board[combo[1]] == " " && board[combo[2]] == " ")
         false
+      else
+        false
       end
     end
   end
