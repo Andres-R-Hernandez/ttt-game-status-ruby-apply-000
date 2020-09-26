@@ -52,7 +52,7 @@ end
 
 #over? Method
 def over?(board)
-  if won?(board).any?
+  if won?(board)
     true
   elsif draw?(board)
     true
