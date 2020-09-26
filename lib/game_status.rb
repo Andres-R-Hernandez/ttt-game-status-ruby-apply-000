@@ -31,7 +31,7 @@ def won?(board)
       end
     end
     if board.none? {|i| i == " "} && win == nil
-      false
+      return false
     end
   end
 end
