@@ -64,7 +64,7 @@ end
 #winner Method
 def winner(board)
   if won?(board)
-    puts "X"
+    puts "win"
   else
     return nil
   end
