@@ -35,19 +35,6 @@ def won?(board)
   end
 end
 
-
-#won? Method
-#def won?(board)
-#  win = 0
-#  if board.all? {|i| i == " "}
-#    false
-#  else
-#    if board.none? {|i| i == " "} && win == 0
-#      return false
-#    end
-#  end
-#end
-
 #full? Method
 def full?(board)
   !board.any? {|i| i == " "}
